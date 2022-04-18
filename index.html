@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- These are for carousel slider-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="https://i.ibb.co/8j9jwcD/amazon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Owl carousel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <!--For off canvas bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="node_modules/flag-icons-svg/css/flag-icons.css">
+    <link rel="stylesheet" href="amazon.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+</head>
+<body>
+    <header class="navbar-my">
+        <div class="nav-belt-my">
+            <div class="logo-my">
+                <a href="#"> <img src="img/amazon.png" alt="amazon" class="amazon-logo-my" id="amazon-logo">
+                    <span id="in-in">.in</span>
+                </a>
+            </div>
+            <a href="#">
+                <div class="address-my">
+                    <div class="loc-log-my">
+                        <i class="bi bi-geo-alt" style="font-size: 20px;color: #959fa9;"></i>
+                    </div>
+                    <div class="location-des-my">
+                        <span style="color:#959fa9;">Deliver to Manoj</span>
+                        <b><span>Hyderabad 500044</span></b>
+                    </div>
+                </div>
+            </a>
+            <div class="quick-search-my">
+                <form action="search-input" class="form-search-my">
+                    <div class="select-cat-my nav-search-my">
+                        <select name="category" id="select-category">
+                            <option value="All">All</option>
+                            <option value="alexa-skills">Alexa Skills</option>
+                            <option value="amazon-devices">Amazon Devices</option>
+                            <option value="fashion">Amazon Fashion</option>
+                            <option value="nowstore">Amazon Fresh</option>
+                            <option value="amazon-pharmacy">Amazon Pharmacy</option>
+                            <option value="appliances">Appliances</option>
+                            <option value="mobile-apps">Apps &amp; Games</option>
+                            <option value="baby">Baby</option>
+                            <option value="beauty">Beauty</option>
+                            <option value="stripbooks">Books</option>
+                            <option value="automotive">Car &amp; Motorbike</option>
+                            <option value="apparel">Clothing &amp; Accessories</option>
+                            <option value="collectibles">Collectibles</option>
+                            <option value="computers">Computers &amp; Accessories</option>
+                            <option value="todays-deals">Deals</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="furniture">Furniture</option>
+                            <option value="lawngarden">Garden &amp; Outdoors</option>
+                            <option value="gift-cards">Gift Cards</option>
+                            <option value="grocery">Grocery &amp; Gourmet Foods</option>
+                            <option value="hpc">Health &amp; Personal Care</option>
+                            <option value="kitchen">Home &amp; Kitchen</option>
+                            <option value="industrial">Industrial &amp; Scientific</option>
+                            <option value="jewelry">Jewellery</option>
+                            <option value="digital-text">Kindle Store</option>
+                            <option value="luggage">Luggage &amp; Bags</option>
+                            <option value="luxury-beauty">Luxury Beauty</option>
+                            <option value="dvd">Movies &amp; TV Shows</option>
+                            <option value="popular">Music</option>
+                            <option value="mi">Musical Instruments</option>
+                            <option value="office-products">Office Products</option>
+                            <option value="pets">Pet Supplies</option>
+                            <option value="instant-video">Prime Video</option>
+                            <option value="shoes">Shoes &amp; Handbags</option>
+                            <option value="software">Software</option>
+                            <option value="sporting">Sports, Fitness &amp; Outdoors</option>
+                            <option value="specialty-aps-sns">Subscribe &amp; Save</option>
+                            <option value="home-improvement">Tools &amp; Home Improvement</option>
+                            <option value="toys">Toys &amp; Games</option>
+                            <option value="under-ten-dollars">Under ₹500</option>
+                            <option value="videogames">Video Games</option>
+                            <option value="watches">Watches</option>
+                        </select>
+                    </div>
+                    <div class="input-text-my nav-search-my">
+                        <input type="text">
+                    </div>
+                    <button type="submit" class="search-submit-my"><i class="bi bi-search" style="font-size:23px;"></i></button>
+                </form>
+            </div>
+            <div class="region-my" id="region-country">
+                <a href="#">
+                    <div class="national-flag-my">
+                        <span class="flag-icon flag-icon-in" style="font-size:15px;">🚩</span>
+                        
+                        <i class="bi bi-caret-down-fill" style="color: #959fa9;font-size:8px;"></i>
+                    </div>
+                </a>
+                <div class="dropdown-region-lan-menu-my">
+                    <i class="bi bi-caret-up-fill" style="font-size:50px; color:white;position:absolute; top: -30px;left: 113px;"></i>
+                    <div class="language" style="border-bottom: 2px solid rgb(189, 169, 169);">
+                        <input type="radio" name="language" id="English" checked>
+                        <label for="English">English</label>
+                    </div>
+                    <div class="language">
+                        <input type="radio" name="language" id="Hindi">
+                        <label for="Hindi">Hindi</label>
+                    </div>
+                    <div class="language">
+                        <input type="radio" name="language" id="Marathi">
+                        <label for="Marathi">Marathi</label>
+                    </div>
+                    <div class="language">
+                        <input type="radio" name="language" id="Tamil">
+                        <label for="Tamil">Tamil</label>
+                    </div>
+                    <div class="language">
+                        <input type="radio" name="language" id="Bangoli">
+                        <label for="Bangoli">Bangoli</label>
+                    </div>
+                    <div class="language">
+                        <input type="radio" name="language" id="kannad">
+                        <label for="kannad">Kannad</label>
+                    </div>
+                    <div class="language">
+                        <input type="radio" name="language" id="Urdu">
+                        <label for="Urdu">Urdu</label>
+                    </div>
+                    <div class="language">
+                        <input type="radio" name="language" id="Arabic">
+                        <label for="Arabic">Arabic</label>
+                    </div>
+                    <div class="language">
+                        <input type="radio" name="language" id="Malyali">
+                        <label for="Malyali">Malyali</label>
+                    </div>
+                    <div class="language-my" style="border-bottom: 2px solid rgb(189, 169, 169);">
+                        <input type="radio" name="language" id="Gujrati">
+                        <label for="Gujrati">Gujrati</label>
+                    </div>
+                    <div class="change-region-my">
+                        <span class="flag-icon flag-icon-in" style="font-size:15px;"></span> You are shopping at Amazon.in
+                        <p style="margin-top: 20px;margin-left: 10px;">
+                            <a href="#" style="text-decoration:none; color:blue !important;">Change Country/Region</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a href="#">
+                <div class="Accounts-my">
+                    <div class="Greet-my">
+                        <span style="color:#959fa9;">Hello, Manoj</span>
+                        <b><span>Account & Lists</span></b>
+                    </div>
+                    <i class="bi bi-caret-down-fill" style="color: #959fa9;font-size:8px;"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="order-returns-my">
+                    <p style="color:#959fa9;margin-top: 20px;">Returns</p>
+                    <p style="position:relative; top:-10px;"> <b> & Orders</b></p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="cart-my">
+                    <div class="number-of-items-my" style="font-size:15px;">
+                        <b>10</b>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="nav-main-my">
+            <nav class="navbar">
+                <a class="navbar-brand" href="#">
+                    ☰
+                 </a>
+                  <a class="navbar-brand" href="#">
+                    ALL
+                  </a>
+                  <a class="navbar-brand" href="#">
+                   Todays deal's
+                  </a>
+                  <a class="navbar-brand" href="#">
+                    Customer service
+                  </a>
+                  <a class="navbar-brand" href="#">
+                Buy again
+                  </a>
+                  <a class="navbar-brand" href="#">
+                  Browsing history
+                  </a>
+                  <a class="navbar-brand" href="#">
+                   Manoj's amazon.com
+                  </a>
+                  <a class="navbar-brand" href="#">
+                    Gift cards
+                   </a>
+                   <a class="navbar-brand" href="#">
+                  Registry
+                   </a>
+                   <a class="navbar-brand" href="#">
+                    Sell
+                     </a>
+             </nav>
+        </div>
+        </header>
+        <main>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <!-- <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                </ol> -->
+<!-- Wrapper for slides -->
+<div class="carousel-inner">
+    <div class="item active">
+        <a href="#">
+            <img src="https://i.ibb.co/qxJMds9/a1.jpg" alt="image" />
+        </a>
+    </div>
+
+    <div class="item">
+        <a href="#">
+            <img src="https://i.ibb.co/rMrL5h6/a2.jpg" alt="image" />
+        </a>
+    </div>
+
+    <div class="item">
+        <a href="#">
+            <img src="https://i.ibb.co/fqx9h1V/a3.jpg" alt="image" />
+        </a>
+    </div>
+    <div class="item">
+        <a href="#">
+            <img src="https://i.ibb.co/jfMpgyd/a4.jpg" alt="image" />
+        </a>
+    </div>
+    <div class="item">
+        <a href="#">
+            <img src="https://i.ibb.co/vjZzRwx/a5.jpg" alt="image" />
+        </a>
+    </div>
+    <div class="item">
+        <a href="#">
+            <img src="https://i.ibb.co/1d0k35y/a6.jpg" alt="image" />
+        </a>
+    </div>
+</div>
+
+<!-- Left and right controls -- Never give -ve z index to the element which you want to give anchor tag  -->
+<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" style="position: absolute; top: 40%; left: 40px;"></span>
+    <span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" style="position: absolute; top: 40%; right: 40px;"></span>
+    <span class="sr-only">Next</span>
+</a>
+</div>  
+<!--main box-->
+
+<div class="owl-carousel owl-theme" id="display-1">
+    <div class="card-top">
+        <div class="item">
+            <h4>Keep shopping for</h4>
+            <div class="keep-shopping-items">
+                <div class="k-s-i-d">
+                    <a href="#">
+                        <img src="https://i.ibb.co/3ypjJZq/computer.jpg" alt="img">
+                        <p>
+                            Computer and accessories..
+                        </p>
+                    </a>
+                </div>
+
+                <div class="k-s-i-d">
+                    <a href="#">
+                        <img src="https://i.ibb.co/YZBM31g/desk2.jpg" alt="img">
+                        <p>
+                            Video Games..
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="keep-shopping-items">
+                <div class="k-s-i-d">
+                    <a href="#">
+                        <img src="https://i.ibb.co/FBg4WDK/d3.jpg" alt="img">
+                        <p>
+                            Table set up.
+                        </p>
+                    </a>
+                </div>
+                <div class="k-s-i-d">
+                    <a href="#">
+                        <img src="https://i.ibb.co/SNV6w96/d4.jpg" alt="img">
+                        <p>
+                                Laptops..
+                        </p>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="card-top">
+        <div class="item">
+            <h4>Amazon Pay | Pay utility bills fast & conveniently</h4>
+            <div class="keep-shopping-items-2">
+                <div class="k-s-i-d-bills">
+                    <a href="#">
+                        <img src="https://i.ibb.co/d5fK2Tc/b1.jpg" alt="img">
+                        <p>
+                            Electricity Bill
+                        </p>
+                    </a>
+                </div>
+
+                <div class="k-s-i-d-bills">
+                    <a href="#">
+                        <img src="https://i.ibb.co/9YZrqJS/b2.jpg" alt="img">
+                        <p>
+                            LPG gas cylinder
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="keep-shopping-items-2">
+                <div class="k-s-i-d-bills">
+                    <a href="#">
+                        <img src="https://i.ibb.co/vh5Y4Bp/b3.jpg" alt="img">
+                        <p>
+                            Broadband bill
+                        </p>
+                    </a>
+                </div>
+                <div class="k-s-i-d-bills">
+                    <a href="#">
+                        <img src="https://i.ibb.co/RQGcXZ0/b4.jpg" alt="img">
+                        <p>
+                            DTH Recharge
+                        </p>
+                    </a>
+                </div>
+
+            </div>
+            <div class="see-more-for-bills" style="margin-top:27px; padding: 8px;;">
+                <a href="#">
+                
+                    <h5>Explore more from Amazon Pay</h5>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <div class="card-top">
+        <div class="item">
+            <h4>Amazon Pay | Pay utility bills fast & conveniently</h4>
+            <div class="keep-shopping-items-2">
+                <div class="k-s-i-d-bills">
+                    <a href="#">
+                        <img src="https://i.ibb.co/5c4RHfD/p1.jpg" alt="img">
+                        <p>
+                            Postpaid Bill
+                        </p>
+                    </a>
+                </div>
+
+                <div class="k-s-i-d-bills">
+                    <a href="#">
+                        <img src="https://i.ibb.co/TYBnbCJ/p2.jpg" alt="img">
+                        <p>
+                            Credit card bill
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="keep-shopping-items-2">
+                <div class="k-s-i-d-bills">
+                    <a href="#">
+                        <img src="https://i.ibb.co/jT9KVHQ/p3.jpg" alt="img">
+                        <p>
+                            Google Play recharge
+                        </p>
+                    </a>
+                </div>
+                <div class="k-s-i-d-bills">
+                    <a href="#">
+                        <img src="https://i.ibb.co/5Lh6h69/p4.jpg" alt="img">
+                        <p>
+                            Pay for subscription
+                        </p>
+                    </a>
+                </div>
+
+            </div>
+            <div class="see-more-for-bills" style="margin-top:27px; padding: 8px;;">
+                <a href="#">
+                  <h5>Explore more from Amazon Pay</h5>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <div class="card-top">
+        <div class="item">
+            <h4>Comfy styles for her </h4>
+            <div class="keep-shopping-items-2">
+                <div class="k-s-i-d-bills">
+                    <a href="#">
+                        <img src="https://i.ibb.co/KDDtwQW/shirt1.jpg" alt="img">
+                        <p>
+                            Sweat shirts
+                        </p>
+                    </a>
+                </div>
+
+                <div class="k-s-i-d-bills">
+                    <a href="#">
+                        <img src="https://i.ibb.co/DkzBghY/shirt2.jpg" alt="img">
+                        <p>
+                            Joggers
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="keep-shopping-items-2">
+                <div class="k-s-i-d-bills">
+                    <a href="#">
+                        <img src="https://i.ibb.co/jD1CwKx/shirt3.jpg" alt="img">
+                        <p>
+                            cardigans
+                        </p>
+                    </a>
+                </div>
+                <div class="k-s-i-d-bills">
+                    <a href="#">
+                        <img src="https://i.ibb.co/M8dt3wG/shirt4.jpg" alt="img">
+                        <p>
+                            Easy tees
+                        </p>
+                    </a>
+                </div>
+
+            </div>
+            <div class="see-more-for-bills" style="margin-top:27px; padding: 8px;;">
+                <a href="#">
+                  <h5>Explore more from Amazon Pay</h5>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <div class="card-top">
+        <div class="item">
+            <h4>Womens wear keep shopping</h4>
+            <div class="keep-shopping-items-2">
+                <div class="k-s-i-d-bills">
+                    <a href="#">
+                        <img src="https://i.ibb.co/1XpqKZS/tops1.jpg" alt="img">
+                        <p>
+                          Formal tops
+                        </p>
+                    </a>
+                </div>
+
+                <div class="k-s-i-d-bills">
+                    <a href="#">
+                        <img src="https://i.ibb.co/4WM05x1/tops2.jpg" alt="img">
+                        <p>
+                            Jeans tops
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="keep-shopping-items-2">
+                <div class="k-s-i-d-bills">
+                    <a href="#">
+                        <img src="https://i.ibb.co/qRvFnx6/tops3.jpg" alt="img">
+                        <p>
+                            party wear tops
+                        </p>
+                    </a>
+                </div>
+                <div class="k-s-i-d-bills">
+                    <a href="#">
+                        <img src="https://i.ibb.co/bX8g9GX/tops4.jpg" alt="img">
+                        <p>
+                         Office wear tops
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+</div>
+<div class="display-panel-1" style="background-color: white; margin: 10px;">
+    <div>
+        <h2 style="padding: 10px; border-bottom: 2px solid rgb(189, 182, 182);">Today's Deals</h2>
+    </div>
+    <div class="owl-carousel owl-theme" id="display-2">
+        <a href="#">
+            <div class="item">
+                <img src="https://i.ibb.co/nPLvP26/one.jpg" alt="watch">
+                <p>
+                    ₹5000 --₹10,000
+                </p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="item">
+                <img src="https://i.ibb.co/25Vktzd/one.jpg" alt="Phone">
+                <p>
+                    ₹30,000 -- ₹35,000
+                </p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="item">
+                <img src="https://i.ibb.co/5s2zfWQ/q3.jpg" alt="PC">
+                <p>
+                    ₹50,490 -- ₹2,00,000
+                </p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="item">
+                <img src="https://i.ibb.co/p0fgWzv/q4.jpg" alt="table">
+                <p>
+                    ₹4,500 -- ₹10,500
+                </p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="item">
+                <img src="https://i.ibb.co/27w5MKJ/q5.jpg" alt="earbuds">
+                <p>
+                  ₹2,400 --₹25,000
+                </p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="item">
+                <img src="https://i.ibb.co/8xBcpVD/q6.jpg" alt="earbuds">
+                <p>
+                    ₹1,500 -- ₹4,000
+                </p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="item">
+                <img src="https://i.ibb.co/Sc62m9G/q7.jpg" alt="earbuds box">
+                <p>
+                    ₹500 --₹1000
+                </p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="item">
+                <img src="https://i.ibb.co/6bZbwY3/q8.jpg" alt="watch">
+                <p>
+                    ₹5000 --₹20,000
+                </p>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="item">
+                <img src="https://i.ibb.co/TTrQLzM/q9.jpg" alt=" pc camera">
+                <p>
+                    ₹2500 -- ₹9,999 
+                </p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="item">
+                <img src="https://i.ibb.co/VvYt9yq/q10.jpg" alt="ipad">
+                <p>
+                    ₹1,00,00 --₹1,99,99
+                </p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="item">
+                <img src="https://i.ibb.co/zf4SRTG/q11.jpg" alt="bed cover">
+                <p>
+                    ₹600 - ₹1,000
+                </p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="item">
+                <img src="https://i.ibb.co/ZKxHDtL/q12.jpg" alt="sarees">
+                <p>
+                    ₹300 - ₹1,000
+                </p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="item">
+                <img src="https://i.ibb.co/QjtB1r6/q13.jpg" alt="helmet">
+                <p>
+                    ₹499 - ₹3,500
+                </p>
+            </div>
+        </a>
+
+
+    </div>
+</div>
+<div class="display-panel-1" style="background-color: white; margin: 10px;">
+    <div>
+        <h2 style="padding: 10px; border-bottom: 2px solid rgb(189, 182, 182);">More top picks for you</h2>
+    </div>
+    <div class="owl-carousel owl-theme" id="display-2">
+        <a href="#">
+            <div class="item">
+                <img src="https://i.ibb.co/RcwPSBY/w7.jpg" alt="img">
+            </div>
+        </a>
+        <a href="#">
+            <div class="item">
+                <img src="https://i.ibb.co/L19sZnT/1.jpg" alt="img">
+            </div>
+        </a>
+        <a href="#">
+            <div class="item">
+                <img src="https://i.ibb.co/6ygXgP9/2.jpg" alt="img">
+            </div>
+        </a>
+        <a href="#">
+            <div class="item">
+                <img src="https://i.ibb.co/zJ8CdR6/3.jpg" alt="img">
+            </div>
+        </a>
+        <a href="#">
+            <div class="item">
+                <img src="https://i.ibb.co/LZPXDhX/4.jpg" alt="img">
+            </div>
+        </a>
+        </a>
+        <a href="#">
+            <div class="item">
+                <img src="https://i.ibb.co/K54jh8R/w6.jpg" alt="img">
+            </div>
+        </a>
+        <a href="#">
+            <div class="item">
+                <img src="https://i.ibb.co/0twCnF1/w1.jpg" alt="img">
+            </div>
+        </a>
+        <a href="#">
+            <div class="item">
+                <img src="https://i.ibb.co/gSTRv6B/w8.jpg" alt="img">
+            </div>
+        </a>
+        <a href="#">
+            <div class="item">
+                <img src="https://i.ibb.co/Fx7XhVq/w9.jpg" alt="img">
+            </div>
+        </a>
+
+
+
+    </div>
+</div>
+<script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+        loop: false,
+        margin: 10,
+        nav: true,
+        dots: false,
+        navText: ["<div class='glyphicon glyphicon-chevron-left' style='position: absolute; top: 30%; font-size:30px; left: 20px;'></div>", "<div class='glyphicon glyphicon-chevron-right'  style='position: absolute; top: 30%; font-size:30px; right: 20px;'></div>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 5
+            }
+        }
+    })
+</script>
+</main>
+<!--footer-->
+<footer>
+    <a href="#myCarousel">
+        <div class="goto-top">
+            <h4>Go to top</h4>
+        </div>
+    </a>
+    <div class="foot-three-parts">
+        <div class="foot-parts">
+            <h4> Get to Know Us</h4>
+            <a href="#">
+                <p>About Us</p>
+            </a>
+            <a href="#">
+                <p>Careers</p>
+            </a>
+            <a href="#">
+                <p>Press Releases</p>
+            </a>
+            <a href="#">
+                <p>Amazon Cares</p>
+            </a>
+            <a href="#">
+                <p>Gift a Smile</p>
+            </a>
+            <a href="#">
+                <p>Amazon Science</p>
+            </a>
+
+        </div>
+        <div class="foot-parts">
+            <h4> Connect with Us</h4>
+            <a href="#">
+                <p> Facebook</p>
+            </a>
+            <a href="#">
+                <p>Twitter</p>
+            </a>
+            <a href="#">
+                <p> Instagram</p>
+            </a>
+        </div>
+        <div class="foot-parts">
+
+            <h4>Make Money with Us</h4>
+            <a href="#">
+                <p>Sell on Amazon</p>
+            </a>
+            <a href="#">
+                <p>Sell under Amazon Accelerator</p>
+            </a>
+            <a href="#">
+                <p>Amazon Global Selling</p>
+            </a>
+            <a href="#">
+                <p>Become an Affiliate</p>
+            </a>
+            <a href="#">
+                <p>Fulfillment by Amazon</p>
+            </a>
+            <a href="#">
+                <p>Advertise Your Products</p>
+            </a>
+            <a href="#">
+                <p>Amazon Pay on Merchants</p>
+            </a>
+        </div>
+    </div>
+    <div class="country-avail">
+        <div class="amazon-country">
+            <a href="#"> <img src="img/amazon.png" alt="img"></a>
+
+            <div class="language-select">
+                <i class="bi bi-globe2" style="font-size:20px; color:rgb(162, 160, 160);"></i>
+                <p style="padding-top:7px;">English</p>
+                <div class="nav-up-down">
+                    <i class="bi bi-caret-up"></i>
+                    <i class="bi bi-caret-down"></i>
+                </div>
+            </div>
+        </div>
+        <div class="countries">
+            <div class="country-name">
+                <a href="#">
+                Australia
+              </a>
+            </div>
+            <div class="country-name">
+                <a href="#">
+                Brazil
+              </a>
+            </div>
+            <div class="country-name">
+                <a href="#">
+                Canada
+              </a>
+            </div>
+            <div class="country-name">
+                <a href="#">
+                China
+              </a>
+            </div>
+            <div class="country-name">
+                <a href="#">
+                France
+              </a>
+            </div>
+            <div class="country-name">
+                <a href="#">
+                Germany
+              </a>
+            </div>
+            <div class="country-name">
+                <a href="#">
+                Italy
+              </a>
+            </div>
+            <div class="country-name">
+                <a href="#">
+                Japan
+              </a>
+            </div>
+            <div class="country-name">
+                <a href="#">
+                Mexico
+              </a>
+            </div>
+            <div class="country-name">
+                <a href="#">
+                Netherlands
+              </a>
+            </div>
+            <div class="country-name">
+                <a href="#">
+                Poland
+              </a>
+            </div>
+            <div class="country-name">
+                <a href="#">
+                Singapore
+              </a>
+            </div>
+            <div class="country-name">
+                <a href="#">
+                Spain
+              </a>
+            </div>
+            <div class="country-name">
+                <a href="#">
+                Turkey
+              </a>
+            </div>
+            <div class="country-name">
+                <a href="#">
+                United Arab Emirates
+              </a>
+            </div>
+            <div class="country-name">
+                <a href="#">
+                United States of America
+              </a>
+            </div>
+            <div class="country-name">
+                <a href="#">
+                India
+              </a>
+            </div>
+            <div class="country-name">
+                <a href="#">
+                Indonesia
+              </a>
+            </div>
+            <div class="country-name">
+                <a href="#">
+                Malaysia
+              </a>
+            </div>
+            <div class="country-name">
+                <a href="#">
+                United Kingdom
+              </a>
+            </div>
+         </div>
+    </div>
+    <div class="last-foot">
+        <a href="#">
+            <div class="last-foot-child">
+                Conditions of Use & Sale
+            </div>
+        </a>
+        <a href="#">
+            <div class="last-foot-child">
+                Privacy Notice
+            </div>
+        </a>
+        <a href="#">
+            <div class="last-foot-child">
+                Interest-Based Ads
+            </div>
+        </a>
+        <div class="last-foot-child">
+            © 1996-2022, Amazon.com, Inc. or its affiliates
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
+
