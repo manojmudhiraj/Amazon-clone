@@ -445,9 +445,7 @@ input[type=radio] {
     z-index: 100;
     position: absolute;
     display: block;
-    margin-left: 37%;
-
-    
+    margin-left: 37%;   
 }
 .discount{
     height:200px;
