@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+ <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- These are for carousel slider-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -24,10 +24,14 @@
     <link rel="stylesheet" href="node_modules/flag-icons-svg/css/flag-icons.css">
     <link rel="stylesheet" href="amazon.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="myscript.js"></script>
     <title>Amazon</title>
 </head>
 <body>
-    <header class="navbar-my">
+    <div class="day-n-night" type="button" onclick="change_mode();">
+        <i class="bi bi-moon-stars-fill" id="change-mode"></i>
+    </div>
+ <header class="navbar-my">
         <div class="nav-belt-my">
             <div class="logo-my">
                 <a href="#"> <img src="img/amazon.png" alt="amazon" class="amazon-logo-my" id="amazon-logo">
@@ -213,9 +217,13 @@
                    <a class="navbar-brand" href="#">
                     Sell
                      </a>
-             </nav>
+        </nav>
         </div>
         </header>
+        <div id="coupon">
+            <button class="close" onClick="closeCoupon()">&times;</button>
+           <img src=" https://i.ibb.co/5WPbxZ1/discount-coupoun.jpg" class="discount" alt="image"/>
+           </div>
         <main>
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
@@ -909,6 +917,9 @@
         </div>
     </div>
 </footer>
+<script>
+    window.onload = loadCoupon()
+</script>
 </body>
 </html>
 

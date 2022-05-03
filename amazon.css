@@ -419,3 +419,40 @@ input[type=radio] {
 .last-foot a {
     color: #959fa9;
 }
+
+/* dark and light mode*/
+.day-n-night {
+    position: fixed;
+    z-index: 25;
+    bottom: 80vh;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: gold;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 5px;
+    background-color: #131921;
+}
+
+/* COUPOUN CODE*/
+#coupon{
+    height:200px;
+    width:400px;
+    background-color:gray;
+    z-index: 100;
+    position: absolute;
+    display: block;
+    margin-left: 37%;
+
+    
+}
+.discount{
+    height:200px;
+    width:400px;
+}
+.close{
+    margin-left:10px;
+}
