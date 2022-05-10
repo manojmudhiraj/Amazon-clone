@@ -60,21 +60,38 @@ a {
 }
 .address-my {
     color: white;
-    width: 155px;
+    min-width: 155px;
+    overflow: hidden;
     height: 100%;
-    display: flex;
-    flex-flow: row nowrap;
+    display: grid;
+    grid-template-areas: 'one two two two ' 'one three three three ';
     font-size: 13px;
+    padding: 5px;
 }
 
-.loc-log-my {
-    padding-top: 7px;
-    margin-right: 7px;
+#img {
+    object-fit: cover;
 }
 
-.location-des-my {
-    padding-top: 3px;
+#imG-container {
+    grid-area: one;
+    width: 100%;
+    height: 100%;
 }
+
+#temperature-here {
+    grid-area: two;
+    width: 100%;
+    height: 100%;
+}
+
+#address-me {
+    grid-area: three;
+    white-space: nowrap;
+    width: 100%;
+    height: 100%;
+}
+
 .quick-search-my {
     height: 40px;
     width: 70%;
